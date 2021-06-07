@@ -1,12 +1,22 @@
 import React from 'react'
+import styled from 'styled-components/macro'
+import tw from 'twin.macro'
+import HomePage from './app/pages/home-page'
+
+const AppContainer = styled.div`
+  ${tw`
+    w-full
+    h-full
+    flex
+    flex-col
+   `}
+`
 
 function App() {
   return (
-    <div className='min-h-screen bg-gray-700'>
-      <div className='container mx-auto'>
-        <h1 className='text-white'>Hello World!</h1>
-      </div>
-    </div>
+    <AppContainer>
+      <HomePage/>
+    </AppContainer>
   )
 }
 
