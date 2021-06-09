@@ -5,7 +5,7 @@ export const LogoContainer = styled.div`
   ${tw`
     flex
     items-center
-  `}
+  `};
 `
 
 export const LogoText = styled.div`
@@ -15,17 +15,15 @@ export const LogoText = styled.div`
     font-bold
     text-black
     m-1
-  `}
-`
+    `};
+  ${({ color }: any) => (color === 'white' ? tw`text-white` : tw`text-black`)}
+` as any
 
-export const LogoImage = styled.div`
+export const Image = styled.div`
   width: auto;
-  ${tw`
-    h-6
-    md:h-9
-  `}
-  
-  img{
+  ${tw`h-6 md:h-9`};
+
+  img {
     width: auto;
     height: 100%;
   }
