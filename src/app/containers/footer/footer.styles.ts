@@ -13,7 +13,7 @@ export const FooterContainer = styled.div`
     items-center
     justify-center
   `};
-`;
+`
 
 export const InnerContainer = styled.div`
   ${tw`
@@ -23,7 +23,7 @@ export const InnerContainer = styled.div`
     max-w-screen-2xl
     flex-wrap
   `};
-`;
+`
 
 export const BottomContainer = styled.div`
   ${tw`
@@ -35,14 +35,14 @@ export const BottomContainer = styled.div`
     mt-7
     md:mt-1
   `};
-`;
+`
 
 export const CopyrightText = styled.small`
   font-size: 12px;
   ${tw`
     text-gray-300
   `}
-`;
+`
 
 export const AboutContainer = styled.div`
   ${tw`
@@ -55,7 +55,7 @@ export const AboutContainer = styled.div`
     md:pl-3
     md:pr-3
   `};
-`;
+`
 
 export const AboutText = styled.p`
   ${tw`
@@ -66,7 +66,7 @@ export const AboutText = styled.p`
     leading-5
     mt-2
   `};
-`;
+`
 
 export const SectionContainer = styled.div`
   ${tw`
@@ -83,7 +83,7 @@ export const SectionContainer = styled.div`
     mt-7
     md:mt-0
   `};
-`;
+`
 
 export const LinksList = styled.ul`
   ${tw`
@@ -92,12 +92,13 @@ export const LinksList = styled.ul`
     flex
     flex-col
   `};
-`;
+`
 
 export const ListItem = styled.li`
   ${tw`
     mb-3
   `};
+
   & > a {
     ${tw`
       text-sm
@@ -106,7 +107,7 @@ export const ListItem = styled.li`
       hover:text-gray-200
     `};
   }
-`;
+`
 
 export const HeaderTitle = styled.h3`
   ${tw`
@@ -115,14 +116,14 @@ export const HeaderTitle = styled.h3`
     text-white
     mb-3
   `};
-`;
+`
 
 export const HorizontalContainer = styled.div`
   ${tw`
     flex
     items-center
   `};
-`;
+`
 
 export const RedIcon = styled.span`
   ${tw`
@@ -137,7 +138,7 @@ export const RedIcon = styled.span`
     text-base
     mr-2
   `};
-`;
+`
 
 export const SmallText = styled.h6`
   ${tw`
