@@ -7,6 +7,7 @@ import { Marginer } from '../../ui/marginer'
 import BookingSteps from '../../containers/booking-steps'
 import AboutUs from '../../containers/about-us'
 import Footer from '../../containers/footer'
+import TopCars from '../../containers/top-cars'
 
 const HomePage = () => {
   return (
@@ -32,8 +33,7 @@ const HomePage = () => {
         direction='vertical'
         margin='8em'
       />
-
-
+      <TopCars />
       <Footer />
     </PageContainer>
   )
