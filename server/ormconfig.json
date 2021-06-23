@@ -1,11 +1,10 @@
 {
-  "name": "dev",
   "type": "mysql",
   "host": "localhost",
   "port": 3306,
   "username": "root",
   "password": "492356",
-  "database": "rent-car",
+  "database": "rentcar",
   "entities": ["dist/**/entities/*{.ts,.js}"],
   "synchronize": true,
   "migrations": ["dist/migrations/*{.ts,.js}"],
