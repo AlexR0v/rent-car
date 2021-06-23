@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel, { Dots, slidesToShowPlugin } from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 import { CarsContainer, Title, TopCarsContainer } from './top-cars.styles'
@@ -6,6 +6,7 @@ import Car from '../../components/car'
 import { ICar } from '../../../typings/car'
 import { useMediaQuery } from 'react-responsive'
 import { SCREENS } from '../../ui/responsive'
+import carService from '../../services/carService'
 
 const testCar: ICar = {
   name: 'Audi S3 Car',
@@ -32,6 +33,17 @@ const testCar2: ICar = {
 const TopCars = () => {
   const [ current, setCurrent ] = useState(0)
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm })
+
+  const fetchTopCars = async () => {
+    const cars = await carService.getCars().catch(error => {
+      console.error(error)
+    })
+    console.log(cars)
+  }
+
+  useEffect(() => {
+    fetchTopCars()
+  }, [])
 
   const cars = [
     <Car {...testCar} />,
